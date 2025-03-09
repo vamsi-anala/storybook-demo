@@ -1,0 +1,34 @@
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import * as ButtonStories from './Button.stories.ts';
+ 
+<Meta title="Button Documentation" />
+
+# Button Component
+
+The `Button` component allows you to define reusable UI elements with customizable properties such as `label`, `color`, and `isDisabled`.
+
+## Properties
+
+- **label**: Specifies the text displayed on the button, making it clear and identifiable to users.
+- **color**: Defines the background color of the button for visual customization.
+- **isDisabled**: A boolean value that disables the button and visually indicates its inactive state when set to `true`.
+
+---
+
+## Examples
+
+### Primary Buttons
+
+Below are the examples for the `Button` component.
+
+#### Red Button
+<Canvas of={ButtonStories.Red} />
+
+#### Green Button
+  <Canvas of={ButtonStories.Green} />
+
+#### Violet Button
+  <Canvas of={ButtonStories.Violet} />
+
+#### Disabled Button
+  <Canvas of={ButtonStories.Disabled} />
